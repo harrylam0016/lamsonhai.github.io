@@ -241,7 +241,9 @@ function addFloatingHashes() {
 // Function to initialize touch events for mobile
 function initTouchEvents() {
     const skillTags = document.querySelectorAll('.skill-tag');
+    const navItems = document.querySelectorAll('.sidebar-nav li');
     
+    // For skill tags
     skillTags.forEach(tag => {
         tag.addEventListener('touchstart', function(e) {
             e.preventDefault();
@@ -251,6 +253,33 @@ function initTouchEvents() {
         
         tag.addEventListener('touchend', function() {
             this.classList.remove('touch-active');
+        });
+    });
+    
+    // Improve navigation touch feedback
+    navItems.forEach(item => {
+        item.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.95)';
+        });
+        
+        item.addEventListener('touchend', function() {
+            this.style.transform = 'scale(1)';
+        });
+    });
+    
+    // Smooth scrolling for mobile
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 }

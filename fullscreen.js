@@ -20,23 +20,39 @@ document.addEventListener('DOMContentLoaded', function() {
         const cvContainer = document.querySelector('.cv-container');
         const mainContent = document.querySelector('.main-content');
         const sidebar = document.querySelector('.sidebar');
+        const isMobile = window.innerWidth <= 1024;
+        
+        // Remove any margins or padding on body
+        document.body.style.padding = '0';
+        document.body.style.margin = '0';
         
         if (cvContainer && mainContent) {
-            // Set container dimensions to fit the viewport
-            cvContainer.style.height = window.innerHeight + 'px';
-            cvContainer.style.width = window.innerWidth + 'px';
+            // Set container width to fit the viewport
+            cvContainer.style.width = '100%';
             
-            // Adjust content height to match container
-            mainContent.style.maxHeight = window.innerHeight + 'px';
-            
-            // Ensure sidebar takes full height
-            if (sidebar) {
-                sidebar.style.height = window.innerHeight + 'px';
+            if (!isMobile) {
+                // For desktop layout (horizontal)
+                document.body.style.overflow = 'hidden'; // Prevent body scrolling
+                cvContainer.style.height = '100vh';
+                mainContent.style.height = '100vh';
+                mainContent.style.overflowY = 'auto';
+                
+                // Ensure sidebar takes full height
+                if (sidebar) {
+                    sidebar.style.height = '100vh';
+                }
+            } else {
+                // For mobile layout (vertical)
+                document.body.style.overflow = 'auto'; // Enable body scrolling
+                document.body.style.overflowX = 'hidden';
+                cvContainer.style.height = 'auto';
+                mainContent.style.height = 'auto';
+                mainContent.style.overflowY = 'visible';
+                
+                if (sidebar) {
+                    sidebar.style.height = 'auto';
+                }
             }
-            
-            // Remove any margins or padding on body
-            document.body.style.padding = '0';
-            document.body.style.margin = '0';
         }
     }
 });

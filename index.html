@@ -12,9 +12,24 @@
         html, body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
             height: 100%;
-            width: 100%;
+        }
+        
+        @media screen and (min-width: 1025px) {
+            html, body {
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 1024px) {
+            html, body {
+                overflow-x: hidden;
+                overflow-y: auto;
+                height: auto;
+                min-height: 100%;
+            }
         }
         
         body {
@@ -58,23 +73,27 @@
         <!-- Main Content -->
         <main class="main-content">
             <header class="cv-header">
-                <div class="name-title">
-                    <h1 class="name">LAM <span class="highlight">SON HAI</span></h1>
-                    <h2 class="subtitle">Software Developer</h2>
+                <div class="header-main">
+                    <div class="name-title">
+                        <h1 class="name">LAM <span class="highlight">SON HAI</span></h1>
+                        <h2 class="subtitle">Software Developer</h2>
+                    </div>
+                    <div class="contact-info">
+                        <p><span>Ho Chi Minh City</span> <span>·</span> <span>+84 365 083 304</span> <span>·</span> <a href="mailto:lamsonhai123321@gmail.com">LAMSONHAI123321@GMAIL.COM</a></p>
+                    </div>
                 </div>
-                <div class="contact-info">
-                    <p>Ho Chi Minh City · +84 365 083 304 · <a href="mailto:lamsonhai123321@gmail.com">LAMSONHAI123321@GMAIL.COM</a></p>
-                </div>
-                <div class="launch-preview">
-                    <button id="launchPreview">
-                        <i class="fas fa-rocket"></i> Launch Live Preview
-                    </button>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <div class="header-actions">
+                    <div class="launch-preview">
+                        <button id="launchPreview">
+                            <i class="fas fa-rocket"></i> Launch Live Preview
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
             </header>
 
