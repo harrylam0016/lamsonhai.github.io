@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<!-- HTML document set up to fit the browser window when viewed in Chrome -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lam Son Hai - Blockchain CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Force the page to take up the full browser window */
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+        
+        body {
+            background-image: none !important;
+            background-color: var(--background-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <div class="profile-image">
+                        <img src="profile-placeholder.jpg" alt="Lam Son Hai Photo">
+                    </div>
+                    <div class="profile-hexagon"></div>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active" data-section="about">ABOUT</li>
+                    <li data-section="experience">EXPERIENCE</li>
+                    <li data-section="education">EDUCATION</li>
+                    <li data-section="skills">SKILLS</li>
+                    <li data-section="achievements">ACHIEVEMENTS</li>
+                </ul>
+            </nav>
+            
+            <div class="blockchain-validation">
+                <div class="validation-node">
+                    <div class="node-pulse"></div>
+                </div>
+                <p class="validated-text">BLOCKCHAIN VALIDATED</p>
+                <div class="hash-display">0x7a9c...</div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="cv-header">
+                <div class="name-title">
+                    <h1 class="name">LAM <span class="highlight">SON HAI</span></h1>
+                    <h2 class="subtitle">Software Developer</h2>
+                </div>
+                <div class="contact-info">
+                    <p>Ho Chi Minh City · +84 365 083 304 · <a href="mailto:lamsonhai123321@gmail.com">LAMSONHAI123321@GMAIL.COM</a></p>
+                </div>
+                <div class="launch-preview">
+                    <button id="launchPreview">
+                        <i class="fas fa-rocket"></i> Launch Live Preview
+                    </button>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </header>
+
+            <section id="about" class="cv-section active">
+                <div class="section-content">
+                    <p class="summary">I am a passionate developer with a solid background in client SDK and game technologies. Alongside that journey, I have spent significant time self-studying and exploring the blockchain space — a field I’ve been deeply interested in since my early exposure to smart contracts and decentralized protocols. With a long-standing passion for blockchain and a strong belief in its potential to shape the future of technology, I am now transitioning into blockchain development. My proficiency in C++, C#, fast learning ability, and systems thinking equip me to contribute effectively to building secure, transparent, and impactful decentralized solutions.</p>
+                    
+                    <div class="blockchain-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">5+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">10+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="cv-section">
+                <div class="section-content">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3 class="position">CLIENT SDK DEVELOPER</h3>
+                            <div class="date-range">NOV 2023 - PRESENT</div>
+                        </div>
+                        <h4 class="company">Smilegate</h4>
+                        <ul class="experience-details">
+                            <li><strong>StoveLink (Unity):</strong>
+                                <ul>
+                                    <li>Analyzed and wrote Render Streaming architecture documentation</li>
+                                    <li>Integrated Sentry for real-time error tracking in Unity games</li>
+                                    <li>Supported mobile and backend teams in debugging and testing streaming games</li>
+                                </ul>
+                            </li>
+                            <li><strong>Stove Launcher V3 - Library Enhancement:</strong>
+                                <ul>
+                                    <li>Interpreted project requirements and broke down development tasks</li>
+                                    <li>Implemented new features, fixed related bugs</li>
+                                    <li>Authored internal documentation and onboarding tutorials</li>
+                                    <li>Utilized Qt5 for client feature development and Fiddler for investigating bugs</li>
+                                    <li>Managed progress tracking and cross-team collaboration</li>
+                                </ul>
+                            </li>
+                            <li><strong>Stove Launcher V3 - Studio:</strong>
+                                <ul>
+                                    <li>Handled assigned maintenance tasks for the launcher</li>
+                                </ul>
+                            </li>
+                            <li><strong>Team Operations:</strong>
+                                <ul>
+                                    <li>Served as secretary of the Client team: created/managed Jira tickets and compiled weekly reports</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3 class="position">JUNIOR GAME DEVELOPER</h3>
+                            <div class="date-range">2022 - 2023</div>
+                        </div>
+                        <h4 class="company">Fairdos</h4>
+                        <ul class="experience-details">
+                            <li>Developed slot games using in-house engine (TypeScript, JSON)</li>
+                            <li>Reviewed PRs and optimized game logic</li>
+                            <li>Coordinated with Art and Sound teams during production</li>
+                            <li>Managed build process via TeamCity</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3 class="position">GAME DEVELOPER & DESIGNER</h3>
+                            <div class="date-range">2021 - 2022</div>
+                        </div>
+                        <h4 class="company">Solar JSC</h4>
+                        <ul class="experience-details">
+                            <li>Created Game Design Documents (GDD) for casual mobile games</li>
+                            <li>Designed levels/maps in Unity and produced promotional videos</li>
+                            <li>Researched game ideas and presented proposals to stakeholders</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="cv-section">
+                <div class="section-content">
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="degree">COMPUTER SCIENCE</h3>
+                            <div class="date-range">GRADUATED</div>
+                        </div>
+                        <h4 class="institution">University of Information Technology (UIT)</h4>
+                        <p>GPA: 3.31/4.00 (Equivalent: 8.28/10.00)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="cv-section">
+                <div class="section-content">
+                    <div class="skills-category">
+                        <h3 class="category-title">TECHNICAL SKILLS</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-name">C++</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">C#</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">TypeScript</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Unity</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Qt5</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="category-title">DEVELOPMENT TOOLS</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Sentry</span>
+                            <span class="skill-tag">Fiddler</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">Wiki</span>
+                            <span class="skill-tag">TeamCity</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="category-title">SOFT SKILLS</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Problem-solving</span>
+                            <span class="skill-tag">Cross-functional Communication</span>
+                            <span class="skill-tag">Quick Adaptability</span>
+                            <span class="skill-tag">Team Collaboration</span>
+                            <span class="skill-tag">Documentation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="skills-category blockchain-skills">
+                        <h3 class="category-title">GAME DEVELOPMENT SKILLS</h3>
+                        <div class="skill-meters-container">
+                            <div class="skill-meter" data-skill="Game Design">
+                                <div class="skill-name">Game Design</div>
+                                <div class="meter-bar">
+                                    <div class="meter-fill" style="width: 75%;"></div>
+                                </div>
+                                <div class="skill-percent">75%</div>
+                            </div>
+                            <div class="skill-meter" data-skill="Level Design">
+                                <div class="skill-name">Level Design</div>
+                                <div class="meter-bar">
+                                    <div class="meter-fill" style="width: 80%;"></div>
+                                </div>
+                                <div class="skill-percent">80%</div>
+                            </div>
+                            <div class="skill-meter" data-skill="Game Logic">
+                                <div class="skill-name">Game Logic</div>
+                                <div class="meter-bar">
+                                    <div class="meter-fill" style="width: 85%;"></div>
+                                </div>
+                                <div class="skill-percent">85%</div>
+                            </div>
+                            <div class="skill-meter" data-skill="Architecture">
+                                <div class="skill-name">Architecture</div>
+                                <div class="meter-bar">
+                                    <div class="meter-fill" style="width: 70%;"></div>
+                                </div>
+                                <div class="skill-percent">70%</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+            <section id="achievements" class="cv-section">
+                <div class="section-content">
+                    <div class="awards-item">
+                        <div class="award-header">
+                            <h3 class="award-title">WINNER — DUONG DEN VINH QUANG CONTEST</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="awards-item">
+                        <div class="award-header">
+                            <h3 class="award-title">THIRD PRIZE — NATIONAL INTERDISCIPLINARY KNOWLEDGE APPLICATION CONTEST</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="awards-item">
+                        <div class="award-header">
+                            <h3 class="award-title">CONSOLATION PRIZE — SOC TRANG PROVINCIAL PHYSICS EXCELLENCE COMPETITION</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="awards-item">
+                        <div class="award-header">
+                            <h3 class="award-title">ACTIVE MEMBER — RADIO & TELEVISION BROADCASTING CLUB, HCMC NATIONAL UNIVERSITY DORMITORY</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+            <span class="icon-light"><i class="fas fa-sun"></i></span>
+            <span class="icon-dark"><i class="fas fa-moon"></i></span>
+        </label>
+    </div>
+    
+    <div class="fullscreen-toggle" id="fullscreen-toggle">
+        <i class="fas fa-expand" id="fullscreen-icon"></i>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+    <script src="fullscreen.js"></script>
+    
+    <!-- Additional styles specific to this CV -->
+    <style>
+        :root {
+            --primary-color: #4e8cff;  /* Changed to blue for a technology feel */
+            --secondary-color: #2c3e50;
+            --sidebar-color: #4e8cff;
+        }
+        
+        /* Additional styles for game development skill meters */
+        .blockchain-skills {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: rgba(78, 140, 255, 0.05);
+            border-radius: var(--border-radius);
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .skill-meters-container {
+            margin-top: 1rem;
+        }
+        
+        .skill-meter {
+            margin-bottom: 1.2rem;
+            position: relative;
+        }
+        
+        .meter-bar {
+            height: 12px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 5px 0;
+        }
+        
+        .meter-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-color), #6c5ce7);
+            border-radius: 10px;
+            position: relative;
+            transition: width 1.5s ease-in-out;
+        }
+        
+        .meter-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%);
+            background-size: 30px 30px;
+            animation: meter-animation 2s linear infinite;
+        }
+        
+        @keyframes meter-animation {
+            0% { background-position: 0 0; }
+            100% { background-position: 60px 0; }
+        }
+        
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+        }
+        
+        .skill-percent {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            font-family: 'Roboto Mono', monospace;
+            text-align: right;
+        }
+        
+        /* Custom connection lines between skills */
+        .connection-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        /* Browser fit mode styles */
+        body.browser-fit-mode {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        body.browser-fit-mode .cv-container {
+            max-width: 100%;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        
+        body.browser-fit-mode .main-content {
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+        
+        /* Make sure the cv-container takes up the full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        .fullscreen-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .fullscreen-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Nested list styling for experience details */
+        .experience-details > li {
+            margin-bottom: 15px;
+        }
+        
+        .experience-details > li > strong {
+            color: var(--primary-color);
+            display: inline-block;
+            margin-bottom: 5px;
+            font-family: 'Space Grotesk', sans-serif;
+            position: relative;
+        }
+        
+        .experience-details > li > strong::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(78, 140, 255, 0.3);
+        }
+        
+        .experience-details > li > ul {
+            margin-top: 5px;
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        
+        .experience-details > li > ul > li {
+            margin-bottom: 3px;
+            position: relative;
+        }
+        
+        .experience-details > li > ul > li::before {
+            content: '⚡';
+            position: absolute;
+            left: -20px;
+            color: var(--primary-color);
+            opacity: 0.7;
+            font-size: 0.8rem;
+        }
+        
+        /* For the achievements section */
+        .awards-item {
+            background-color: rgba(78, 140, 255, 0.05);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .awards-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: var(--primary-color);
+        }
+        
+        .awards-item:hover {
+            transform: translateX(5px);
+            background-color: rgba(78, 140, 255, 0.1);
+        }
+        
+        /* Dark Mode Styles */
+        :root {
+            --primary-color: #4e8cff;
+            --secondary-color: #2c3e50;
+            --accent-color: #00adb5;
+            --background-color: #f0f3f6;
+            --sidebar-color: #4e8cff;
+            --text-color: #333;
+            --text-light: #7b8794;
+            --card-bg: #fff;
+            --text-inverse: #fff;
+            --border-radius: 5px;
+            --transition-speed: 0.3s;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --grid-pattern: rgba(78, 140, 255, 0.1);
+            --meter-bg: rgba(0, 0, 0, 0.1);
+            --skill-bg: #f0f0f0;
+            --award-bg: rgba(78, 140, 255, 0.05);
+            --award-hover: rgba(78, 140, 255, 0.1);
+            --stat-bg: #f9f9f9;
+            --border-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        html.dark-mode {
+            --primary-color: #60a5fa;
+            --secondary-color: #e2e8f0;
+            --accent-color: #0fa5b3;
+            --background-color: #0f172a;
+            --sidebar-color: #1e40af;
+            --text-color: #e2e8f0;
+            --text-light: #94a3b8;
+            --card-bg: #1e293b;
+            --text-inverse: #f1f5f9;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            --grid-pattern: rgba(96, 165, 250, 0.1);
+            --meter-bg: rgba(255, 255, 255, 0.1);
+            --skill-bg: #334155;
+            --award-bg: rgba(96, 165, 250, 0.1);
+            --award-hover: rgba(96, 165, 250, 0.2);
+            --stat-bg: #1e293b;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .cv-container {
+            background-color: var(--card-bg);
+        }
+
+        /* Theme Toggle Switch */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #f0f0f0;
+            transition: .4s;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            z-index: 2;
+        }
+
+        .icon-light, .icon-dark {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            z-index: 1;
+        }
+
+        .icon-light {
+            left: 8px;
+            color: #f59e0b;
+        }
+
+        .icon-dark {
+            right: 8px;
+            color: #6366f1;
+        }
+
+        input:checked + .slider {
+            background-color: #334155;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(30px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        
+        /* Dark mode adjustments */
+        html.dark-mode .name {
+            color: var(--secondary-color);
+        }
+        
+        html.dark-mode .date-range {
+            background-color: #334155;
+        }
+        
+        html.dark-mode .skill-tag {
+            background-color: var(--skill-bg);
+            color: var(--text-color);
+        }
+        
+        html.dark-mode .skill-tag:hover {
+            background-color: var(--primary-color);
+            color: var(--text-inverse);
+        }
+        
+        html.dark-mode .skill-bar {
+            background-color: var(--skill-bg);
+        }
+        
+        html.dark-mode .experience-item, 
+        html.dark-mode .education-item {
+            border-bottom-color: var(--border-color);
+        }
+        
+        html.dark-mode .meter-bar {
+            background-color: var(--meter-bg);
+        }
+        
+        html.dark-mode .skill-progress {
+            background-color: var(--primary-color);
+        }
+        
+        html.dark-mode .awards-item {
+            background-color: var(--award-bg);
+        }
+        
+        html.dark-mode .awards-item:hover {
+            background-color: var(--award-hover);
+        }
+        
+        html.dark-mode .stat-item {
+            background-color: var(--stat-bg);
+            border-color: var(--border-color);
+        }
+        
+        html.dark-mode .blockchain-skills {
+            background-color: var(--award-bg);
+        }
+        
+        html.dark-mode .social-link {
+            background-color: #334155;
+            color: var(--text-color);
+        }
+        
+        html.dark-mode .social-link:hover {
+            background-color: var(--primary-color);
+            color: var(--text-inverse);
+        }
+        
+        /* Fix for Launch Live Preview button in dark mode */
+        html.dark-mode #launchPreview {
+            background-color: #60a5fa;
+            color: #0f172a;
+            font-weight: 500;
+            box-shadow: 0 2px 15px rgba(96, 165, 250, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        html.dark-mode #launchPreview:hover {
+            background-color: #93c5fd;
+            box-shadow: 0 4px 20px rgba(96, 165, 250, 0.6);
+            transform: translateY(-3px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        /* Mobile responsiveness tweaks */
+        @media screen and (max-width: 768px) {
+            .blockchain-skills {
+                padding: 1rem;
+            }
+            
+            .award-title {
+                font-size: 0.9rem;
+            }
+
+            .theme-toggle {
+                top: 10px;
+                right: 10px;
+            }
+
+            .switch {
+                width: 50px;
+                height: 26px;
+            }
+
+            .slider:before {
+                height: 18px;
+                width: 18px;
+            }
+
+            input:checked + .slider:before {
+                transform: translateX(24px);
+            }
+        }
+        
+        /* Blockchain decoration */
+        .blockchain-decoration {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .block-connections {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+</html>
