@@ -455,7 +455,7 @@
         .fullscreen-toggle {
             position: fixed;
             bottom: 20px;
-            right: 20px;
+            right: 90px; /* Moved to the left of the theme toggle */
             width: 40px;
             height: 40px;
             background-color: var(--primary-color);
@@ -599,9 +599,19 @@
         /* Theme Toggle Switch */
         .theme-toggle {
             position: fixed;
-            top: 20px;
+            bottom: 20px;
             right: 20px;
-            z-index: 100;
+            z-index: 1001;
+            transition: all 0.3s ease;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .switch {
@@ -626,7 +636,8 @@
             bottom: 0;
             background-color: #f0f0f0;
             transition: .4s;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .slider:before {
@@ -639,6 +650,7 @@
             background-color: white;
             transition: .4s;
             z-index: 2;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         }
 
         .icon-light, .icon-dark {
@@ -660,11 +672,13 @@
         }
 
         input:checked + .slider {
-            background-color: #334155;
+            background-color: #1e40af;
+            border-color: rgba(255, 255, 255, 0.1);
         }
 
         input:checked + .slider:before {
             transform: translateX(30px);
+            background-color: #f9fafb;
         }
 
         .slider.round {
@@ -673,6 +687,11 @@
 
         .slider.round:before {
             border-radius: 50%;
+        }
+        
+        html.dark-mode .theme-toggle {
+            background-color: #1e293b;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
         }
         
         /* Dark mode adjustments */
@@ -764,7 +783,7 @@
             }
 
             .theme-toggle {
-                top: 10px;
+                bottom: 10px;
                 right: 10px;
             }
 
